@@ -1,0 +1,25 @@
+Introduction
+This is a class I wrote for a project in my fourth semester of my degree. We were given a term/definition website which was like a dictionary, but more about the words' meanings in different countries. It was written in with Java servlets and JSP, and we had to use agile processes to improve it and do our own thing. 
+
+Goal
+One of our focuses for the project was meaningful search. For the first release we had a Levenshtein distance search for terms when everyone else only had simple SQL like phrases. Our final release had an attribute language which allowed users to be more expressive in their searching.
+
+Ubergloss Attribute Language (UAL)
+[tag]
+(locale)
+term
+"definition"
+
+Samples searches:
+[internet] (en-US) - Definitions fom the US locale tagged with internet
+"science" (gb-UK)  - Definitions containing the word "science" from the UK
+
+
+
+Locales
+Terms can have different definitions in each locale. By tagging different definitions with different locales, it's possible to filter results by them. Tags had additional meaning  since we had tag hierarchies, however that functionality isn't exposed here.
+
+This code is untouched from when it was handed in. If there's any further interest I'll consider posting the rest.
+
+
+Note: I understand that this class is made obsolete by modern OR/Ms and databases with built in search (and other search engines like the excellent Lucene), however we only needed something quick for a demo and learning a new tool was a might-have.
